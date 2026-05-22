@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background-color: rgb(108, 107, 116);
+  padding: 15px;
+  border-radius: 20px;
+  width: 240px;
+  height: 350px;
+}
+
+.resultContainer {
+  background-color: rgb(2, 2, 2);
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  padding: 5px 20px;
+}
+
+.output {
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button {
+  width: 50px;
+  margin: 2px;
+  height: 50px;
+  min-width: 0px;
+  min-height: 0px;
+  border-radius: 35px;
+  border: none;
+  background-color: rgb(218, 212, 230);
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.digits {}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
