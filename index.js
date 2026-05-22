@@ -49,12 +49,12 @@ buttons.forEach(function (button) {
       op = e.target.textContent;
     }
     if (e.target.parentElement.classList.contains("digits") && e.target.textContent != "=") {
-      if (op == "") {
+      if (op == "" && !(a.includes(".") && e.target.textContent == ".")) {
         a += e.target.textContent;
         output.textContent = a;
       }
       else {
-        if (e.target.textContent != "=") {
+        if (e.target.textContent != "=" && !(b.includes(".") && e.target.textContent == ".")) {
           b += e.target.textContent;
           output.textContent = b;
         }
@@ -76,7 +76,7 @@ buttons.forEach(function (button) {
       console.log(b);
       rslt = operator(op, Number(a), Number(b));
       output.textContent = rslt.toFixed(2);
-      a = rslt;
+      a = "";
       b = "";
       op = "";
       rslt = "";
