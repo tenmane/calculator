@@ -67,6 +67,10 @@ buttons.forEach(function (button) {
         output.textContent = rslt;
         return;
       }
+      if (Number(b) == 0 && op == "/") {
+        output.textContent = "Error - Attempted Division by Zero"
+        return;
+      }
       console.log(op);
       console.log(a);
       console.log(b);
