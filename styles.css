@@ -3,6 +3,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: rgb(57, 55, 61);
 }
 
 .mainContainer {
@@ -17,7 +18,7 @@ body {
 }
 
 .resultContainer {
-  background-color: rgb(2, 2, 2);
+  background-color: rgb(128, 122, 122);
   height: 60px;
   border-radius: 10px;
   display: flex;
@@ -45,8 +46,18 @@ body {
   font-weight: bold;
 }
 
+#equal {
+  background-color: orange;
+}
+
+#clear {
+  background-color: orange;
+  margin-bottom: 7px;
+}
+
 .button:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .digits {}
